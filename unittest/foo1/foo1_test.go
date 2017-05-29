@@ -1,7 +1,9 @@
+// White box testing
+
 package foo1
 
 import (
-	. "gitlab.com/lnquy/go-training/unittesting/test"
+	. "gitlab.com/lnquy/go-training/unittest/test"
 	"testing" // Need to import testing package
 )
 
@@ -21,7 +23,8 @@ func TestPlus(test *testing.T) {
 	for _, tc := range testCases {
 		actualValue := plus(tc.Input.(IntPair).A, tc.Input.(IntPair).B)
 		if tc.Output.(int) != actualValue {
-			test.Errorf("Expected %d, got %d", tc.Output, actualValue) // Provide more into here if need
+			test.Errorf("foo1.plus(%d, %d) = %d. Expected %d", tc.Input.(IntPair).A, tc.Input.(IntPair).B,
+				actualValue, tc.Output) // Provide more into here if need
 		}
 	}
 }

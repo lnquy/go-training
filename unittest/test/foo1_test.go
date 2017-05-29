@@ -1,7 +1,9 @@
+// Black box testing
+
 package test
 
 import (
-	"gitlab.com/lnquy/go-training/unittesting/foo1"
+	"gitlab.com/lnquy/go-training/unittest/foo1"
 	"testing"
 )
 
@@ -18,7 +20,8 @@ func TestPublicPlus(test *testing.T) {
 	for _, tc := range testCases {
 		actualValue := foo1.PublicPlus(tc.Input.(IntTuple).A, tc.Input.(IntTuple).B, tc.Input.(IntTuple).C)
 		if tc.Output != actualValue {
-			test.Errorf("Expected %d, got %d", tc.Output, actualValue)
+			test.Errorf("foo1.PublicPlus(%d, %d, %d) = %d. Expected %d", tc.Input.(IntTuple).A,
+				tc.Input.(IntTuple).B, tc.Input.(IntTuple).C, actualValue, tc.Output)
 		}
 	}
 }
