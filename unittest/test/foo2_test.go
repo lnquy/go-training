@@ -14,7 +14,7 @@ type StubInputServicer struct {
 }
 
 // Data implemented from foo2.InputServicer interface
-func (s StubInputServicer) Data(url string) ([]byte, error) {
+func (s StubInputServicer) GetData(url string) ([]byte, error) {
 	if url != "" {
 		return []byte(url), nil
 	}
