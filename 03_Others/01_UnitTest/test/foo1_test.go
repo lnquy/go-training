@@ -3,7 +3,7 @@
 package test
 
 import (
-	"gitlab.com/lnquy/go-training/unittest/foo1"
+	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo1"
 	"testing"
 )
 

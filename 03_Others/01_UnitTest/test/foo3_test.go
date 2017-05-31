@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 	"fmt"
-	"gitlab.com/lnquy/go-training/unittest/foo3"
+	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo3"
 )
 
 type Dummy struct {

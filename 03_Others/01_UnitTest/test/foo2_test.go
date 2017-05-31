@@ -4,7 +4,7 @@ package test
 
 import (
 	"testing"
-	"gitlab.com/lnquy/go-training/unittest/foo2"
+	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo2"
 	"errors"
 	"reflect"
 )
