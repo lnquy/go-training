@@ -24,6 +24,9 @@ func (*Student) Move() {
 	fmt.Println("Student moves...")
 }
 
+func (s *Student) String() string {
+	return fmt.Sprintf("Name: %s\nAge: %d\nClass: %s\nSchool: %s\n", s.Person.Name, s.Age, s.Class, s.School)
+}
 
 func main() {
 	s := &Student{
@@ -36,5 +39,6 @@ func main() {
 	}
 
 	fmt.Printf("Name: %s\nAge: %d\nClass: %s\nSchool: %s\n", s.Person.Name, s.Age, s.Class, s.School)
+	fmt.Printf("%v", s)
 	s.Move()
 }

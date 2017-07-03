@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	var s []int = []int{0,1,2,3,4,5,6,7,8,9}
 
-	fmt.Printf("S[0:5] = %v\n", s[:5]) // s[:5]
+	fmt.Printf("S[0:5] = %v\n", s[:5]) // s[0:5]
 	fmt.Printf("S[4:8] = %v\n", s[4:8])
-	fmt.Printf("S[6:] = %v\n", s[12:])
+	fmt.Printf("S[6:] = %v\n", s[12:]) // s[12:len(s)]
 }
 
 
