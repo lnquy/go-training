@@ -15,6 +15,6 @@ func main() {
 func retUser() *User {
 	return &User{
 		Name: "lnquy",
-		Age: 24,
+		Age:  24,
 	}
 }

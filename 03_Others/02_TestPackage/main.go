@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gitlab.com/lnquy/go-training/03_Others/02_TestPackage/pkg1"
 	"fmt"
+	"gitlab.com/lnquy/go-training/03_Others/02_TestPackage/pkg1"
 )
 
 func main() {

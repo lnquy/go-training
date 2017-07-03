@@ -7,5 +7,3 @@ func plus(a int, b int) int {
 func PublicPlus(a, b, c int) int {
 	return a + b + c
 }
-
-

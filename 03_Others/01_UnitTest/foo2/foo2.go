@@ -12,7 +12,7 @@ type Reader struct {
 	Servicer InputServicer
 }
 
-func (r Reader) GetData(url string) ([]byte, error)  {
+func (r Reader) GetData(url string) ([]byte, error) {
 	fmt.Println("GetData method from foo2.Reader")
 	return []byte("Hello"), nil
 }

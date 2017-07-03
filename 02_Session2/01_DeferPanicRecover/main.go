@@ -17,7 +17,7 @@ func poorFunc(i int) {
 		}
 	}()
 
-	if 5 / i == 0 {
+	if 5/i == 0 {
 		fmt.Println("Impossible")
 	} else {
 		fmt.Println("Possible")

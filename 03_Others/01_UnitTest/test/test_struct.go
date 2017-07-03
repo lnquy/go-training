@@ -2,7 +2,7 @@ package test
 
 // Global struct holding all test cases
 type TestCase struct {
-	Input interface{}
+	Input  interface{}
 	Output interface{}
 }
 

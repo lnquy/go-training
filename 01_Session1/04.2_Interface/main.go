@@ -1,7 +1,6 @@
 package main
 
 import (
-	"gitlab.com/lnquy/go-training/01_Session1/04.2_Interface/models"
 	"fmt"
 )
 
@@ -9,12 +8,29 @@ type Sayer interface {
 	Say() string
 }
 
-func main() {
-	d := models.Dog{"Gogo"}
-	c := models.Cat{"Mewmew"}
+type FuncType func(...string)
 
-	LetAnimalSaySomething(d)
-	LetAnimalSaySomething(c)
+func X1(s ...string) {
+	fmt.Print(s)
+}
+
+func X2(s ...string) {
+	fmt.Printf("XXX: %s", s)
+}
+
+func main() {
+	//d := models.Dog{"Gogo"}
+	//c := models.Cat{"Mewmew"}
+	//
+	//LetAnimalSaySomething(d)
+	//LetAnimalSaySomething(c)
+
+	X(X1)
+	X(X2)
+}
+
+func X(f FuncType) {
+	f("asdas", "asdas, 'q;weqwe")
 }
 
 func LetAnimalSaySomething(a Sayer) {

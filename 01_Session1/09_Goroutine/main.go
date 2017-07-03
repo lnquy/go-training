@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -9,7 +8,7 @@ import (
 func f(from string) {
 	for i := 0; i < 3; i++ {
 		fmt.Println(from, ":", i)
-		time.Sleep(time.Duration(i * 100) * time.Millisecond)
+		time.Sleep(time.Duration(i*100) * time.Millisecond)
 	}
 }
 

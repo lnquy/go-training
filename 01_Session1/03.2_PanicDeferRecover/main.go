@@ -13,6 +13,7 @@ func f() {
 			fmt.Println("Recovered in f", r)
 		}
 	}()
+
 	fmt.Println("Calling g.")
 	g(0)
 	fmt.Println("Returned normally from g.")

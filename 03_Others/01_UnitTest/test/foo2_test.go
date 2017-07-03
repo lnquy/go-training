@@ -3,10 +3,10 @@
 package test
 
 import (
-	"testing"
-	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo2"
 	"errors"
+	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo2"
 	"reflect"
+	"testing"
 )
 
 // StubInputServicer is a foo struct using to test foo2.Reader methods

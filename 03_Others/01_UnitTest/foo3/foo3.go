@@ -19,7 +19,7 @@ type Reader struct {
 	InputServicer // Embedded interface
 }
 
-func (r Reader) GetData(url string) ([]byte, error)  {
+func (r Reader) GetData(url string) ([]byte, error) {
 	fmt.Println("GetData method from foo3.Reader")
 	return []byte("Hello"), nil
 }

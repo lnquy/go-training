@@ -14,7 +14,6 @@ func main() {
 		//messages <- "ping"
 	}()
 
-
 	msg := <-messages
 	fmt.Println(msg)
 	msg = <-messages

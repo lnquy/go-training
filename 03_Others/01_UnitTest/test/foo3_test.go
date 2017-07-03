@@ -1,9 +1,9 @@
 package test
 
 import (
-	"testing"
 	"fmt"
 	"gitlab.com/lnquy/go-training/03_Others/01_UnitTest/foo3"
+	"testing"
 )
 
 type Dummy struct {

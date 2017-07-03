@@ -14,10 +14,10 @@ type Mover interface {
 type Student struct {
 	Person // Embedded struct
 
-	Class string
+	Class  string
 	School string
 
-	Mover // Embedded interface
+	//Mover // Embedded interface
 }
 
 func (*Student) Move() {
@@ -32,13 +32,14 @@ func main() {
 	s := &Student{
 		Person: Person{
 			Name: "lnquy",
-			Age: 24,
+			Age:  24,
 		},
-		Class: "11CN111",
+		Class:  "11CN111",
 		School: "LHU",
 	}
 
 	fmt.Printf("Name: %s\nAge: %d\nClass: %s\nSchool: %s\n", s.Person.Name, s.Age, s.Class, s.School)
+
 	fmt.Printf("%v", s)
 	s.Move()
 }
