@@ -54,7 +54,7 @@ func main() {
 
 func calEverything(cal Calculator) {
 	fmt.Printf("\nType of shape: %v\n", reflect.TypeOf(cal)) // Reflection - Get actual type of struct that implemented Calculator interface
-	fmt.Printf("  Values: %v\n  ", cal)
+	fmt.Printf("  Values: %v\n", cal)
 	fmt.Printf("  Area: %.3f\n", cal.Area())
 	fmt.Printf("  Primeter: %.3f\n", cal.Perimeter())
 }
