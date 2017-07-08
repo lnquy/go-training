@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "name": {
+    "first_name": "Alan",
+    "last_name": "Turing"
+  },
+  "class": "BXDA123",
+  "school": "MIT",
+  "message": "Hello World"
+}
