@@ -20,9 +20,9 @@ func main() {
 			total := 0
 			for {
 				key := rand.Intn(5)
-				mutex.Lock()
+				//mutex.Lock()
 				total += state[key]
-				mutex.Unlock()
+				//mutex.Unlock()
 				atomic.AddUint64(&readOps, 1)
 
 				// Wait a bit between reads.
@@ -31,20 +31,20 @@ func main() {
 		}()
 	}
 
-	for w := 0; w < 10; w++ {
-		go func() {
-			for {
-				key := rand.Intn(5)
-				val := rand.Intn(100)
-				mutex.Lock()
-				state[key] = val
-				mutex.Unlock()
-				atomic.AddUint64(&writeOps, 1)
-
-				time.Sleep(time.Millisecond)
-			}
-		}()
-	}
+	//for w := 0; w < 10; w++ {
+	//	go func() {
+	//		for {
+	//			key := rand.Intn(5)
+	//			val := rand.Intn(100)
+	//			mutex.Lock()
+	//			state[key] = val
+	//			mutex.Unlock()
+	//			atomic.AddUint64(&writeOps, 1)
+	//
+	//			time.Sleep(time.Millisecond)
+	//		}
+	//	}()
+	//}
 
 	// Let the 10 goroutines work on the `state` and
 	// `mutex` for a second.
