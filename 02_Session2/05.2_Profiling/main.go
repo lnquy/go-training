@@ -24,8 +24,9 @@ func execTime(name string, t time.Time) {
 }
 
 func main() {
+	//go checkPrime1(982451653)
 	//go func() {
-	//	log.Println(http.ListenAndServe("localhost:15000", nil))
+	//	log.Println(http.ListenAndServe("localhost:8080", nil))
 	//}()
 
 	nu := 982451653
